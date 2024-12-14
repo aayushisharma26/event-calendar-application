@@ -53,25 +53,28 @@ const App = () => {
 
   return (
     <div className="App">
-      <FullCalendar
-        plugins={[dayGridPlugin, interactionPlugin]}
-        initialView="dayGridMonth"
-        events={events}
-        dateClick={handleDateClick}
-        eventClick={handleEventClick}
-      />
+  <div className="full-calendar-container">
+    <FullCalendar
+      plugins={[dayGridPlugin, interactionPlugin]}
+      initialView="dayGridMonth"
+      events={events}
+      dateClick={handleDateClick}
+      eventClick={handleEventClick}
+    />
+  </div>
 
-      {modalOpen && (
-        <EventModal
-          selectedDate={selectedDate}
-          selectedEvent={selectedEvent}
-          onClose={() => setModalOpen(false)}
-          onAddEvent={addEvent}
-          onUpdateEvent={updateEvent}
-          onDeleteEvent={deleteEvent}
-        />
-      )}
-    </div>
+  {modalOpen && (
+    <EventModal
+      selectedDate={selectedDate}
+      selectedEvent={selectedEvent}
+      onClose={() => setModalOpen(false)}
+      onAddEvent={addEvent}
+      onUpdateEvent={updateEvent}
+      onDeleteEvent={deleteEvent}
+    />
+  )}
+</div>
+
   );
 };
 

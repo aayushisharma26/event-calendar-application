@@ -7,10 +7,19 @@
   background-color: #f9f9f9;
 }
 
-.full-calendar-container {
+/* .full-calendar-container {
   width: 80%;
   margin: 30px auto;
+} */
+
+
+.full-calendar-container {
+  width: 60%; /* Adjust the width as needed */
+  height: 500px; /* Set a specific height */
+  margin: 30px auto;
+  background-color: red ;
 }
+
 
 .modal {
   position: fixed;
