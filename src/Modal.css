@@ -1,4 +1,3 @@
-Modal background and positioning
 .modal {
     position: fixed;
     top: 0;
@@ -44,7 +43,7 @@ Modal background and positioning
     text-align: left;
   }
   
-  .modal-content input {
+.modal-content input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -53,12 +52,12 @@ Modal background and positioning
     font-size: 1rem;
     transition: border-color 0.3s;
     margin-left: -10px;
-  }
+}
   
-  .modal-content input:focus {
+.modal-content input:focus {
     border-color: #2575fc;
     outline: none;
-  }
+}
   
   /* Modal actions buttons container */
   .modal-actions {
@@ -85,22 +84,22 @@ button:hover {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
   }
   
-  button:disabled {
+button:disabled {
     background-color: #ddd;
     cursor: not-allowed;
-  }
+}
   
-  button.delete {
+button.delete {
     background-color: #e74c3c;
-  }
+}
   
-  button.delete:hover {
+button.delete:hover {
     background-color: #c0392b;
-  }
+}
   
-  button:focus {
+button:focus {
     outline: none;
-  }
+}
   
   /* Responsive layout for smaller screens */
   @media (max-width: 600px) {
